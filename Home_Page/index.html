@@ -6,6 +6,8 @@
     <title>Clothing Store</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .product-card { 
             transition: transform 0.2s;
@@ -22,27 +24,55 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Revive atelier</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html">Cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="checkout.html">Checkout</a>
-                    </li>
-                </ul>
-            </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo (Left-Aligned) -->
+      <a class="navbar-brand" href="index.html">Fashion Store</a>
+  
+      <!-- Mobile Toggle Button -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Right-Aligned Content -->
+        <div class="d-flex ms-auto gap-3 align-items-center">
+          <!-- Navigation Links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+          </ul>
+  
+          <!-- Auth Buttons -->
+          <div class="d-flex gap-2">
+            <a href="signin.html" class="btn btn-outline-secondary">Sign In</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS (required for toggler) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Filter Section -->
     <div class="container filter-section">
@@ -79,7 +109,78 @@
             <!-- Products will be dynamically inserted here -->
         </div>
     </div>
+    <!-- Your existing content (navbar, product grid, etc.) -->
 
+<!-- Add the footer here -->
+<footer class="bg-light py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side Content -->
+        <div class="col-md-6 text-center text-md-left">
+          <p class="mb-0">&copy; 2025 Your Company</p>
+          <div class="footer-links">
+            <a href="/privacy-policy" class="mx-2">Privacy Policy</a>
+            <a href="/terms" class="mx-2">Terms of Service</a>
+          </div>
+        </div>
+  
+        <!-- Right Side Social Media -->
+        <div class="col-md-6 mt-3 mt-md-0 text-center text-md-right">
+          <!-- Instagram (Gradient Color) -->
+          <a href="https://instagram.com/your-profile" class="social-icon mx-2 instagram">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          
+          <!-- Facebook (Blue) -->
+          <a href="https://facebook.com/your-profile" 
+             target="_blank" 
+             class="social-icon mx-2 facebook">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          
+          <!-- Twitter (Sky Blue) -->
+          <a href="https://twitter.com/your-profile" 
+             target="_blank" 
+             class="social-icon mx-2 twitter">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Custom CSS for Brand Colors -->
+  <style>
+    /* Base style for all icons */
+    .social-icon {
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+  
+    /* Instagram Gradient */
+    .instagram .fa-instagram {
+        color: #E1306C; /* Instagram's pink */
+      }
+    /* Facebook Blue */
+    .facebook .fa-facebook {
+      color: #1877F2;
+    }
+  
+    /* Twitter Sky Blue */
+    .twitter .fa-twitter {
+      color: #1DA1F2;
+    }
+  
+    /* Hover effect */
+    .social-icon:hover {
+      opacity: 0.8;
+    }
+  </style>
+
+  
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
