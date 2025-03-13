@@ -1,52 +1,125 @@
-/* Hover Effects for Nav Links */
-.nav-link {
-    color: #333;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff !important; /* Brand name color */
+}
+
+.navbar-toggler {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
     padding: 8px 16px;
-    border-radius: 4px;
     transition: all 0.3s ease;
-  }
-  
-  .nav-link:hover {
+}
+
+.navbar-nav .nav-link:hover {
     color: #fff;
     background-color: #007bff;
     text-decoration: none;
-  }
-  
-  .nav-link.active {
-    color: #007bff;
+}
+
+.navbar .btn {
+    padding: 8px 16px;
+}
+
+/* Filter Section Styling */
+.filter-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Product Card Styling */
+.product-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px; /* Adjusted for mobile */
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
     font-weight: bold;
-  }
-  
-  /* Hero Section Styling */
-  .hero-section {
-    position: relative;
-    color: white;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  /* Social Icon Colors */
-  .instagram .fa-instagram {
-    color: #E1306C; /* Instagram pink */
-  }
-  
-  .facebook .fa-facebook {
-    color: #1877F2; /* Facebook blue */
-  }
-  
-  .twitter .fa-twitter {
-    color: #1DA1F2; /* Twitter sky blue */
-  }
-  
-  /* Card Hover Effect */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+.social-icon {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.instagram .fa-instagram {
+    color: #E1306C;
+}
+
+.facebook .fa-facebook {
+    color: #1877F2;
+}
+
+.twitter .fa-twitter {
+    color: #1DA1F2;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Hidden Products */
+.hidden {
+    display: none;
+}
+.btn , .nav-link {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
