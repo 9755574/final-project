@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Fashion Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Left Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+      </ul>
+
+      <!-- Centered Brand Name -->
+      <a class="navbar-brand mx-auto fw-bold" href="../index.html">
+        Your Brand Name
+      </a>
+
+      <!-- Right Links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link position-relative">
+            <i class="fas fa-cart-shopping"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3 <!-- Replace with dynamic cart count -->
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="checkout.html" class="nav-link active">Checkout</a>
+        </li>
+        <li class="nav-item">
+          <a href="signin.html" class="nav-link">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Checkout Form -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Checkout</h2>
+    <form>
+      <div class="row">
+        <!-- Personal Information -->
+        <div class="col-md-6">
+          <h5>Personal Information</h5>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+          </div>
+        </div>
+
+        <!-- Shipping Address -->
+        <div class="col-md-6">
+          <h5>Shipping Address</h5>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+          </div>
+          <div class="mb-3">
+            <label for="zip" class="form-label">ZIP Code</label>
+            <input type="text" class="form-control" id="zip" placeholder="Enter your ZIP code" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Method -->
+      <div class="mt-4">
+        <h5>Payment Method</h5>
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="expiryDate" class="form-label">Expiry Date</label>
+              <input type="month" class="form-control" id="expiryDate" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="mb-0">&copy; 2023 Your Brand Name</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <a href="https://instagram.com" class="social-icon mx-2 instagram">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://facebook.com" class="social-icon mx-2 facebook">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://twitter.com" class="social-icon mx-2 twitter">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
